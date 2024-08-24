@@ -1,4 +1,4 @@
-# app
+# Bill Splitter
 
 A new Flutter project.
 
