@@ -1,1 +1,1 @@
-# PlantWhispererApp
+# Bill Splitter
