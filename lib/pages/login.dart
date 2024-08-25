@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'navigation.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -15,7 +16,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _AppBar(),
+      appBar: Navigation(title: "Login Page",),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -74,21 +75,6 @@ class _LoginPageState extends State<LoginPage> {
         print('Username: $username, Password: $password');
       },
       child: const Text('Login'),
-    );
-  }
-
-  AppBar _AppBar() {
-    return AppBar(
-      title: const Text('Login Page'),
-      centerTitle: true,
-      leading: const Icon(Icons.menu),
-      actions: [
-        IconButton(onPressed: () {
-          print("Logout button pressed");
-        }, 
-        icon: const Icon(Icons.logout))
-      ],
-      backgroundColor: Colors.blue[100],
     );
   }
 }
