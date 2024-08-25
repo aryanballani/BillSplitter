@@ -8,16 +8,15 @@ class Navigation extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
       return AppBar(
-        title: const Text('Login Page'),
+        title: Text(title),
         centerTitle: true,
-        leading: const Icon(Icons.menu),
-        actions: [
-          IconButton(onPressed: () {
-            print("Logout button pressed");
-          }, 
-          icon: const Icon(Icons.logout))
-        ],
-        backgroundColor: Colors.blue[100],
+        // actions: [
+        //   IconButton(onPressed: () {
+        //     print("Logout button pressed");
+        //   }, 
+        //   icon: const Icon(Icons.logout))
+        // ],
+        backgroundColor: Colors.blue,
       );
   }
 

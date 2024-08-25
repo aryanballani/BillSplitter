@@ -1,5 +1,6 @@
+import 'package:app/pages/home.dart';
 import 'package:flutter/material.dart';
-import 'navigation.dart';
+import '../commonWidgets/navigation.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -16,7 +17,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: Navigation(title: "Login Page",),
+      appBar: const Navigation(title: "Login Page"),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -68,11 +69,9 @@ class _LoginPageState extends State<LoginPage> {
   ElevatedButton makeLoginButton() {
     return ElevatedButton(
       onPressed: () {
-        // Implement your login logic here
-        final username = _usernameController.text;
-        final password = _passwordController.text;
-        // For now, just print the username and password
-        print('Username: $username, Password: $password');
+        // final username = _usernameController.text;
+        // final password = _passwordController.text;
+        Navigator.pushNamed(context, '/home'); 
       },
       child: const Text('Login'),
     );
