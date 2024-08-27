@@ -1,7 +1,8 @@
-import 'package:app/pages/friends.dart';
-import 'package:app/pages/home.dart';
-import 'package:app/pages/login.dart';
-import 'package:app/pages/profile.dart';
+import 'package:app/pages/home/friends.dart';
+import 'package:app/pages/home/home.dart';
+import 'package:app/pages/authenticate/login.dart';
+import 'package:app/pages/home/profile.dart';
+import 'package:app/pages/wrapper.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Bill Splitter',
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: Wrapper(),
       routes: {
         '/home': (context) => HomePage(),
         './friends': (context) => FriendsPage(),

@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import '../commonWidgets/navigation.dart';
+import '../../commonWidgets/navigation.dart';
 
 class FriendsPage extends StatelessWidget {
   const FriendsPage({super.key});
