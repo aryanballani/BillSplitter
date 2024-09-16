@@ -1,17 +1,15 @@
-import 'package:app/pages/home/home.dart';
-import 'package:app/services/auth.dart';
 import 'package:flutter/material.dart';
 import '../../commonWidgets/navigation.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+class Register extends StatefulWidget {
+  const Register({super.key});
 
   @override
-  _LoginPageState createState() => _LoginPageState();
+  State<Register> createState() => _RegisterState();
 }
+  
 
-class _LoginPageState extends State<LoginPage> {
-  // final AuthService _auth = AuthService();
+class _RegisterState extends State<Register> {
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   bool _showPassword = false;
@@ -19,7 +17,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const Navigation(title: "Login Page"),
+      appBar: const Navigation(title: "Register Page"),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -79,4 +77,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
